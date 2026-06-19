@@ -54,7 +54,7 @@ def print_results_table(results: list[dict], quiet: bool = False) -> None:
         # Highlight low R2
         if r2 < 0.98:
             r2_style = "[bold red]" + r2_str + "[/bold red]"
-            status_str += "[bold red]⚠ Weak Fit[/bold red]"
+            status_str += "[bold red]! Weak Fit[/bold red]"
         else:
             r2_style = f"{r2_str}"
 
@@ -65,9 +65,9 @@ def print_results_table(results: list[dict], quiet: bool = False) -> None:
                 f"[bold yellow]{res['transition_type']}*[/bold yellow]"
             )
             if status_str:
-                status_str += " | [bold yellow]★ Rec[/bold yellow]"
+                status_str += " | [bold yellow]* Rec[/bold yellow]"
             else:
-                status_str = "[bold yellow]★ Recommended[/bold yellow]"
+                status_str = "[bold yellow]* Recommended[/bold yellow]"
         else:
             sample_style = res["sample_name"]
             trans_style = res["transition_type"]
