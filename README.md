@@ -1,5 +1,7 @@
 # optical-bandgap-tauc
 
+Developed by **raymsmk** with AI assistance.
+
 `optical-bandgap-tauc` is a research-grade Python command-line interface (CLI) tool designed for materials science laboratories. It automates the processing of raw Diffuse Reflectance Spectroscopy (DRS) data to compute Kubelka-Munk conversions, generate Tauc plots, and automatically detect the linear absorption-edge regime to derive optical band gaps ($E_g$) with high reproducibility.
 
 ---
